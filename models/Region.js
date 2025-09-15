@@ -1,9 +1,12 @@
+// models/Region.js
 import mongoose from "mongoose";
 
 const regionSchema = new mongoose.Schema({
   nombre: { type: String, required: true },
-  descripcion: { type: String }
+  descripcion: { type: String, default: "" },
 });
 
-export default mongoose.model("Region", regionSchema, "region");
+// Se fuerza a usar la colección exacta 'region'
+const Region = mongoose.model("region", regionSchema, "region");
 
+export default Region;

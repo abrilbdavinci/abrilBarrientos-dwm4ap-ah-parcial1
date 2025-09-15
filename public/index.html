@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentación API Recetas Argentinas</title>
+    <title>API Recetas Argentinas - Documentación</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="/usuarios">Usuarios</a></li>
                     <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
                     <li class="nav-item"><a class="nav-link" href="/ingredientes">Ingredientes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/region">Regiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/region">Region</a></li>
                 </ul>
 
             </div>
@@ -54,8 +54,8 @@
             <li><a href="/recetas" class="nav-link text-white"><i class="fas fa-utensils me-3 my-2"></i>Recetas</a></li>
             <li><a href="/ingredientes" class="nav-link text-white"><i
                         class="fas fa-carrot me-3 my-2"></i>Ingredientes</a></li>
-            <li><a href="/region" class="nav-link text-white"><i
-                        class="fas fa-map-marker-alt me-3 my-2"></i>Regiones</a></li>
+            <li><a href="/region" class="nav-link text-white"><i class="fas fa-map-marker-alt me-3 my-2"></i>Region</a>
+            </li>
         </ul>
         <button id="botonMusica" class="btn btn-primary">
             <i id="iconoMusica" class="fas fa-play"></i>
@@ -68,7 +68,7 @@
         <header class="mb-4"></header>
 
         <h1 class="mb-3 text-primary">Documentación</h1>
-        <p class="mb-4">Gestionar usuarios, recetas, ingredientes y regiones de Argentina. Endpoints
+        <p class="mb-4">Gestionar usuarios, recetas, ingredientes y region de Argentina. Endpoints
             <strong>CRUD</strong>
         </p>
 
@@ -87,19 +87,22 @@
                 </div>
             </section>
 
-            <!-- Recetas -->
+            <!-- recetas -->
+            <!-- recetas -->
             <section id="recetas" class="col-12 col-md-6">
                 <div class="card shadow-sm rounded-3 p-3 h-100">
-                    <h5><i class="fas fa-utensils me-2"></i>Recetas</h5>
+                    <h5><i class="fas fa-utensils me-2"></i>recetas</h5>
                     <ul>
                         <li>GET /recetas — Ver todas</li>
                         <li>GET /recetas/:id — Ver por ID</li>
+                        <li>GET /recetas/region/:id — Ver recetas de una región específica</li>
                         <li>POST /recetas — Crear receta</li>
                         <li>PUT /recetas/:id — Actualizar receta</li>
                         <li>DELETE /recetas/:id — Eliminar receta</li>
                     </ul>
                 </div>
             </section>
+
 
             <!-- Ingredientes -->
             <section id="ingredientes" class="col-12 col-md-6">
@@ -115,10 +118,10 @@
                 </div>
             </section>
 
-            <!-- Regiones -->
-            <section id="regiones" class="col-12 col-md-6">
+            <!-- region -->
+            <section id="region" class="col-12 col-md-6">
                 <div class="card shadow-sm rounded-3 p-3 h-100">
-                    <h5><i class="fas fa-map-marked-alt me-2"></i>Regiones</h5>
+                    <h5><i class="fas fa-map-marked-alt me-2"></i>Region</h5>
                     <ul>
                         <li>GET /region — Ver todas</li>
                         <li>GET /region/:id — Ver por ID</li>
@@ -132,7 +135,7 @@
 
 
         <footer class="text-center mt-5 p-3 bg-light rounded-3">
-            Abril Barrientos - Aplicaciones Híbridas - Docente: Jonathan Emanuel Cruz - Comisión: DWM4AP
+            <strong>Abril Barrientos</strong> - Aplicaciones Híbridas - <strong>Docente:</strong> Jonathan Emanuel Cruz - <strong>Comisión:</strong> DWM4AP
         </footer>
     </div>
 

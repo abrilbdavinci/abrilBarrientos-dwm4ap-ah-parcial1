@@ -1,4 +1,4 @@
-# 🇦🇷🍲 API Recetas Argentinas
+# 🇦🇷🍲 API recetas Argentinas
 
 - Nombre y apellido: Abril Barrientos
 - Materia: Aplicaciones Híbridas
@@ -6,7 +6,7 @@
 - Comisión: DWM4AP
 
 ## Descripción
-API para gestionar recetas de cocina argentinas, incluyendo sus regiones, ingredientes y usuarios. 
+API para gestionar recetas de cocina argentinas, incluyendo sus region, ingredientes y usuarios. 
 Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre cada colección.
 
 ## Tecnologías
@@ -26,7 +26,7 @@ Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sob
 - `PUT /usuarios/:id` — Actualizar un usuario  
 - `DELETE /usuarios/:id` — Eliminar un usuario  
 
-### Recetas
+### recetas
 - `GET /recetas` — Obtener todas las recetas  
 - `GET /recetas/:id` — Obtener una receta por ID  
 - `POST /recetas` — Crear una receta  
@@ -40,11 +40,11 @@ Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sob
 - `PUT /ingredientes/:id` — Actualizar un ingrediente  
 - `DELETE /ingredientes/:id` — Eliminar un ingrediente  
 
-### Regiones
-- `GET /regiones` — Obtener todas las regiones  
-- `GET /regiones/:id` — Obtener una región por ID  
-- `POST /regiones` — Crear una región  
-- `PUT /regiones/:id` — Actualizar una región  
-- `DELETE /regiones/:id` — Eliminar una región  
+### region
+- `GET /region` — Obtener todas las region  
+- `GET /region/:id` — Obtener una región por ID  
+- `POST /region` — Crear una región  
+- `PUT /region/:id` — Actualizar una región  
+- `DELETE /region/:id` — Eliminar una región  
 
-## Estructura de Carpetas
+## Gracias por ver

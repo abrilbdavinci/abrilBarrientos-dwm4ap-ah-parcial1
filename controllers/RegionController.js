@@ -1,16 +1,18 @@
 import Region from "../models/Region.js";
 
 const RegionController = {
+  // GET /region
   obtenerTodas: async (req, res) => {
     try {
-      const regiones = await Region.find();
-      res.json(regiones);
+      const region = await Region.find();
+      res.json(region);
     } catch (error) {
-      console.error("Error al obtener regiones:", error);
-      res.status(500).json({ mensaje: "Error al obtener regiones" });
+      console.error("Error al obtener region:", error);
+      res.status(500).json({ mensaje: "Error al obtener region" });
     }
   },
 
+  // GET /region/:id
   obtenerPorId: async (req, res) => {
     try {
       const region = await Region.findById(req.params.id);
@@ -22,6 +24,28 @@ const RegionController = {
     }
   },
 
+  obtenerPorNombreRegion: async (req, res) => {
+  try {
+    const { nombre } = req.params;
+
+    // Buscar la región por nombre
+    const region = await Region.findOne({ nombre: nombre });
+    if (!region) return res.status(404).json({ mensaje: "Región no encontrada" });
+
+    // Buscar recetas de esa región
+    const recetas = await receta.find({ region: region._id })
+      .populate("region", "nombre descripcion")
+      .populate("usuario", "nombre email");
+
+    res.json(recetas);
+  } catch (error) {
+    console.error("Error al obtener recetas por región:", error);
+    res.status(500).json({ mensaje: "Error al obtener recetas por región" });
+  }
+}
+,
+
+  // POST /region
   crear: async (req, res) => {
     try {
       const nuevaRegion = new Region(req.body);
@@ -33,6 +57,7 @@ const RegionController = {
     }
   },
 
+  // PUT /region/:id
   actualizar: async (req, res) => {
     try {
       const region = await Region.findByIdAndUpdate(req.params.id, req.body, { new: true });
@@ -44,6 +69,7 @@ const RegionController = {
     }
   },
 
+  // DELETE /region/:id
   eliminar: async (req, res) => {
     try {
       const region = await Region.findByIdAndDelete(req.params.id);
