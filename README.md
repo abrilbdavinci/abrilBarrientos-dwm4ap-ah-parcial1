@@ -1,9 +1,9 @@
-# API Recetas Argentinas
+# 🇦🇷🍲 API Recetas Argentinas
 
-Nombre y apellido: Abril Barrientos
-Materia: Aplicaciones Híbridas
-Docente: Jonathan Emanuel Cruz
-Comisión: DWM4AP
+- Nombre y apellido: Abril Barrientos
+- Materia: Aplicaciones Híbridas
+- Docente: Jonathan Emanuel Cruz
+- Comisión: DWM4AP
 
 ## Descripción
 API para gestionar recetas de cocina argentinas, incluyendo sus regiones, ingredientes y usuarios. 
