@@ -4,7 +4,7 @@
 - Materia: Aplicaciones Híbridas
 - Docente: Jonathan Emanuel Cruz
 - Comisión: DWM4AP
-
+<img width="1461" height="923" alt="portada" src="https://github.com/user-attachments/assets/57014235-4382-43b8-bece-2d542ad976ab" />
 ## Descripción
 API para gestionar recetas de cocina argentinas, incluyendo sus regiones, ingredientes y usuarios. 
 Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre cada colección.
