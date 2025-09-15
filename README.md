@@ -46,5 +46,3 @@ Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sob
 - `POST /regiones` — Crear una región  
 - `PUT /regiones/:id` — Actualizar una región  
 - `DELETE /regiones/:id` — Eliminar una región  
-
-## Estructura de Carpetas
