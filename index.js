@@ -5,8 +5,8 @@ import path from "path";
 import cors from 'cors';
 import { fileURLToPath } from "url";
 
-// Importar rutas
-import rutas from "./routes/index.js";
+// Importar router
+import router from "./routes/index.js";
 
 dotenv.config();
 const app = express();
@@ -28,8 +28,8 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("✅ Conectado a MongoDB"))
   .catch(err => console.error("❌ Error al conectar a MongoDB:", err));
 
-// Rutas
-app.use("/", rutas);
+// router
+app.use("/", router);
 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
