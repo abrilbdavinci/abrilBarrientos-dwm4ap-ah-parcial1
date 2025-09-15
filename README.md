@@ -4,7 +4,7 @@
 - Materia: Aplicaciones Híbridas
 - Docente: Jonathan Emanuel Cruz
 - Comisión: DWM4AP
-
+<img width="1461" height="923" alt="portada" src="https://github.com/user-attachments/assets/57014235-4382-43b8-bece-2d542ad976ab" />
 ## Descripción
 API para gestionar recetas de cocina argentinas, incluyendo sus region, ingredientes y usuarios. 
 Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre cada colección.
@@ -40,6 +40,7 @@ Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sob
 - `PUT /ingredientes/:id` — Actualizar un ingrediente  
 - `DELETE /ingredientes/:id` — Eliminar un ingrediente  
 
+<<<<<<< HEAD
 ### region
 - `GET /region` — Obtener todas las region  
 - `GET /region/:id` — Obtener una región por ID  
@@ -48,3 +49,11 @@ Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sob
 - `DELETE /region/:id` — Eliminar una región  
 
 ## Gracias por ver
+=======
+### Regiones
+- `GET /regiones` — Obtener todas las regiones  
+- `GET /regiones/:id` — Obtener una región por ID  
+- `POST /regiones` — Crear una región  
+- `PUT /regiones/:id` — Actualizar una región  
+- `DELETE /regiones/:id` — Eliminar una región  
+>>>>>>> a92efe8fe54dd8bce33d797990db5a190cf78a92
