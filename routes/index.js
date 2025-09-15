@@ -1,14 +1,14 @@
-import express from "express";
-import RecetaRoutes from "./RecetaRoutes.js";
-import UsuarioRoutes from "./UsuarioRoutes.js";
-import IngredienteRoutes from "./IngredienteRoutes.js";
-import RegionRoutes from "./RegionRoutes.js";
+import express from 'express';
+import ingredienteRoutes from './IngredienteRoutes.js';
+import usuarioRoutes from './UsuarioRoutes.js';
+import recetaRoutes from './RecetaRoutes.js';
+import regionRoutes from './RegionRoutes.js';
 
 const router = express.Router();
 
-router.use("/recetas", RecetaRoutes);
-router.use("/usuarios", UsuarioRoutes);
-router.use("/ingredientes", IngredienteRoutes);
-router.use("/region", RegionRoutes);
+router.use('/ingredientes', ingredienteRoutes);
+router.use('/usuarios', usuarioRoutes);
+router.use('/recetas', recetaRoutes);
+router.use('/region', regionRoutes);
 
 export default router;

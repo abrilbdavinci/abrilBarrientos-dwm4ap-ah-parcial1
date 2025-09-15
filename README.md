@@ -1,28 +1,50 @@
 # API Recetas Argentinas
 
-## Datos del proyecto
-- Nombre y apellido: Abr Ü
-- Materia: Programación y Diseño Web
-- Docente: Prof. Da Vinci
-- Comisión: 1
+Nombre y apellido: Abril Barrientos
+Materia: Aplicaciones Híbridas
+Docente: Jonathan Emanuel Cruz
+Comisión: DWM4AP
 
 ## Descripción
-API REST para gestionar recetas de cocina argentinas, con soporte para restricciones alimentarias y relación entre usuarios, recetas, ingredientes y region.
+API para gestionar recetas de cocina argentinas, incluyendo sus regiones, ingredientes y usuarios. 
+Endpoints para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre cada colección.
 
 ## Tecnologías
-- Node.js
-- Express
-- MongoDB
-- Mongoose
-- Bootstrap para el front-end
+- Node.js 
+- Express.js
+- MongoDB (con Mongoose)
+- dotenv (para variables de entorno)
+- HTML5
+- CSS3 / Bootstrap
 
-## Rutas principales
-- `/api/recetas`
-- `/api/ingredientes`
-- `/api/region`
-- `/api/usuarios`
+## Estructura de la API
 
-## Funcionalidades
-- CRUD completo para todas las colecciones
-- Relación entre usuarios y recetas
-- Página principal con enlaces a todos los endpoints
+### Usuarios
+- `GET /usuarios` — Obtener todos los usuarios  
+- `GET /usuarios/:id` — Obtener un usuario por ID  
+- `POST /usuarios` — Crear un usuario  
+- `PUT /usuarios/:id` — Actualizar un usuario  
+- `DELETE /usuarios/:id` — Eliminar un usuario  
+
+### Recetas
+- `GET /recetas` — Obtener todas las recetas  
+- `GET /recetas/:id` — Obtener una receta por ID  
+- `POST /recetas` — Crear una receta  
+- `PUT /recetas/:id` — Actualizar una receta  
+- `DELETE /recetas/:id` — Eliminar una receta  
+
+### Ingredientes
+- `GET /ingredientes` — Obtener todos los ingredientes  
+- `GET /ingredientes/:id` — Obtener un ingrediente por ID  
+- `POST /ingredientes` — Crear un ingrediente  
+- `PUT /ingredientes/:id` — Actualizar un ingrediente  
+- `DELETE /ingredientes/:id` — Eliminar un ingrediente  
+
+### Regiones
+- `GET /regiones` — Obtener todas las regiones  
+- `GET /regiones/:id` — Obtener una región por ID  
+- `POST /regiones` — Crear una región  
+- `PUT /regiones/:id` — Actualizar una región  
+- `DELETE /regiones/:id` — Eliminar una región  
+
+## Estructura de Carpetas
